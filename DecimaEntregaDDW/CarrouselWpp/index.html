@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--Css carrousel-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <h1>Colapinto F1 Highlights Carousel</h1>
+      <div class="owl-carousel owl-theme" id="container">
+          <div class="item">
+              <img src="imgs/Brasilf1.jpeg" alt="BrasilTack">
+          </div>
+          <div class="item">
+              <img src="imgs/Col2.jpeg" alt="Colapinto 1">
+          </div>
+          <div class="item">
+              <img src="imgs/Col3.jpeg" alt="Colapinto2">
+          </div>
+          <div class="item">
+              <img src="imgs/Col4.jpeg" alt="Colapinto3">
+          </div>
+          <div class="item">
+            <img src="imgs/Col5.jpeg" alt="Colapinto4">
+          </div>
+          <div class="item">
+            <img src="imgs/col6.webp" alt="Colapinto5">
+          </div>
+      </div>
+
+      <!-- Footer -->
+      <footer>
+        <!-- Botón de contacto de WhatsApp -->
+        <button id="whatsapp-btn">
+            <img src="imgs/wppButton.png" alt="">
+        </button>
+      </footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            nav: true,
+            autoplay: true,
+            autoplayTimeout: 4000,
+            responsive: {
+              0: {
+                items: 1
+              },
+              600: {
+                items: 3
+              },
+              1000: {
+                items: 5
+              }
+            }
+        });
+        // Funcionalidad del botón de WhatsApp
+        $('#whatsapp-btn').on('click', function() {
+          // Número de teléfono (código de país + número)
+          var phoneNumber = "+541123375826"; // Reemplaza con el número de WhatsApp
+          // Mensaje predefinido
+          var message = "¡Hola! Estoy interesado en su galería."; // Personaliza el mensaje
+
+          // Construcción del enlace de WhatsApp
+          var whatsappUrl = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
+
+          // Redirección a WhatsApp
+          window.open(whatsappUrl, '_blank');
+        });
+      });
+    </script>
+  </body>
+</html>

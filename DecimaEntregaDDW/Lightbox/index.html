@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferrari Lightbox</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- lightbox css -->
+    <link rel="stylesheet" href="dist/css/lightbox.css">
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title"><span>Lambo</span> Lightbox</h1>
+        <div class="subcontainer">
+            <div class="grid">
+                <a href="imgs/img-1.jpg" data-title="Lambo" data-lightbox="lambo-image" class="img"></a>
+                <a href="imgs/img-2.jpg" data-title="Lambo" data-lightbox="lambo-image" class="img"></a>
+                <a href="imgs/img-3.jpg" data-title="Lambo" data-lightbox="lambo-image" class="img"></a>
+                <a href="imgs/img-4.jpg" data-title="Lambo" data-lightbox="lambo-image" class="img"></a>
+                <a href="imgs/img-5.jpg" data-title="Lambo" data-lightbox="lambo-image" class="img"></a>
+                <a href="imgs/img-6.jpg" data-title="Lambo" data-lightbox="lambo-image" class="img"></a>
+                <a href="imgs/img-7.jpg" data-title="Lambo" data-lightbox="lambo-image" class="img"></a>
+                <a href="imgs/img-8.jpg" data-title="Lambo" data-lightbox="lambo-image" class="img"></a>
+                <a href="imgs/img-9.jpg" data-title="Lambo" data-lightbox="lambo-image" class="img"></a>    
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <!-- Botón de contacto de WhatsApp -->
+        <button id="whatsapp-btn">
+            <img src="imgs/wppButton.png" alt="">
+        </button>
+      </footer>
+
+    <!-- lightbox js -->
+     <script src="dist/js/lightbox-plus-jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+        
+        // Funcionalidad del botón de WhatsApp
+        $('#whatsapp-btn').on('click', function() {
+            // Número de teléfono (código de país + número)
+            var phoneNumber = ""; // Reemplaza con el número de WhatsApp
+            // Mensaje predefinido
+            var message = "¡Hola! Estoy interesado en su galería."; // Personaliza el mensaje
+
+            // Construcción del enlace de WhatsApp
+            var whatsappUrl = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
+
+            // Redirección a WhatsApp
+            window.open(whatsappUrl, '_blank');
+            });
+            
+        });
+    </script>
+</body>
+</html>

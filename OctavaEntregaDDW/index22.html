@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2 con funciones y metodos DOM</title>
+    <script>
+        function calcularPerimetro(lado1, lado2){
+            return (lado1 + lado2) * 2;
+        }
+
+        function calcularArea(lado1, lado2){
+            return lado1 * lado2;
+        }
+
+        function mostrarResultado(){
+            var lado1 = parseFloat(prompt("Ingrese el primer lado del rectangulo")); 
+            var lado2 = parseFloat(prompt("Ingrese el segundo lado del rectangulo"));
+
+            var perimetro = calcularPerimetro(lado1, lado2);
+            var area = calcularArea(lado1, lado2);
+
+            document.getElementById("perimetro").innerHTML = "El perimetro del rectangulo es: "+perimetro;
+            document.getElementById("area").innerHTML = "El area del rectangulo es: "+area;
+        
+        }
+    </script>
+</head>
+<body>
+    <p id="perimetro"></p>
+    <p id="area"></p>
+
+    <script>
+        mostrarResultado(); 
+    </script>
+</body>
+</html>

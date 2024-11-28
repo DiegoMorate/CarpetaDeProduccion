@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .caja-contenedora{
+            display: flex;
+        }
+        .caja{
+            background-color: blueviolet;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            justify-content: center;
+        }
+
+        @media (max-width: 768px){
+            .caja-contenedora{
+                flex-direction: column;
+                align-items: center ;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="caja-contenedora">
+    <div class="caja"></div>
+    <div class="caja"></div>
+    <div class="caja"></div>
+    </div>
+</body>
+</html>

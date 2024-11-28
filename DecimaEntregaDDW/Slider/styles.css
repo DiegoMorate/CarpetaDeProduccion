@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Evita el desplazamiento */
+  font-family: 'Anton', sans-serif;
+}
+
+/*centrar el slider*/
+#ajSlider {
+  width: 100%;
+  height: 100%; 
+  overflow: hidden;
+  position: relative;
+}
+
+/* centrar las imgs */
+#ajSlider img {
+  width: 100%;
+  height: 100%; 
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 2s ease-in-out; 
+}
+
+/* mostrar siempre primera imagen */
+#ajSlider img:first-child {
+  opacity: 1;
+}
+
+/*container de los dots */
+#ajSliderBullets {
+  position: absolute;
+  bottom: 20px; 
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+/* Estilo de cada Dot*/
+#ajSliderBullets li {
+  background-color: grey;
+  height: 15px;
+  width: 15px;
+  display: inline-block;
+  list-style: none;
+  margin: 0 5px; /* Ajusta el espacio entre las balas */
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Estilo el dot que se muestra */
+#ajSliderBullets li.active {
+  background-color: grey;
+}
+
+/* Hover */
+#ajSliderBullets li:hover {
+  background-color: rgb(158, 97, 23) !important; /* Cambia el color a naranja oscuro al pasar el cursor */
+}
+
+/* Estilo del texto */
+.slider-text {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(209, 138, 56);
+  font-size: 100px; /* Ajusta el tamaño de la fuente según tus necesidades */
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Transición de opacidad y desplazamiento */
+}
+
+.slider-text.active {
+  opacity: 1;  
+  transform: translate(-50%, -40%); /* Desplazamiento hacia abajo cuando está activo */
+}
+

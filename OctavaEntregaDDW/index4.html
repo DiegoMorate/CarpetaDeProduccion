@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio sin utilizar funciones ni metodos DOM</title>
+</head>
+<body>
+    <script>
+        var numero1 = parseFloat(prompt("Ingresa el primer número:"));
+        var numero2 = parseFloat(prompt("Ingresa el segundo número:"));
+        var numero3 = parseFloat(prompt("Ingresa el tercer número:"));
+        var numero4 = parseFloat(prompt("Ingresa el cuarto número:"));
+        var numero5 = parseFloat(prompt("Ingresa el quinto número:"));
+
+        var mayor = Math.max(numero1, numero2, numero3, numero4, numero5);
+        var menor = Math.min(numero1, numero2, numero3, numero4, numero5);
+
+        document.write("<ul>");
+        document.write("<li>El mayor número ingresado es " + mayor + "</li>");
+        document.write("<li>El menor número ingresado es " + menor + "</li>");
+        document.write("</ul>");
+    </script>
+</body>
+</html>

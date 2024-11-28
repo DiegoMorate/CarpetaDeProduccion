@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4 utilizando fuciones y metodos DOM</title>
+    <script>
+        // Función para solicitar 5 números al usuario y devolverlos en un arreglo
+        function solicitarNumeros() {
+            var numeros = [];
+            for (var i = 1; i <= 5; i++) {
+                var numero = parseFloat(prompt("Ingresa el número " + i + ":"));
+                numeros.push(numero);
+            }
+            return numeros;
+        }
+
+        // Función para encontrar el mayor número en un arreglo
+        function encontrarMayor(numeros) {
+            return Math.max(...numeros);
+        }
+
+        // Función para encontrar el menor número en un arreglo
+        function encontrarMenor(numeros) {
+            return Math.min(...numeros);
+        }
+
+        // Función para mostrar el resultado en el DOM
+        function mostrarResultados() {
+            var numeros = solicitarNumeros();
+            var mayor = encontrarMayor(numeros);
+            var menor = encontrarMenor(numeros);
+
+            // Crear una lista desordenada y mostrar los resultados
+            var lista = document.createElement("ul");
+            var itemMayor = document.createElement("li");
+            itemMayor.textContent = "El mayor número ingresado es " + mayor;
+            var itemMenor = document.createElement("li");
+            itemMenor.textContent = "El menor número ingresado es " + menor;
+
+            // Agregar los elementos a la lista
+            lista.appendChild(itemMayor);
+            lista.appendChild(itemMenor);
+
+            // Agregar la lista al cuerpo del documento
+            document.body.appendChild(lista);
+        }
+    </script>
+</head>
+<body>
+    <script>
+        // Llamar a la función para mostrar los resultados
+        mostrarResultados();
+    </script>
+</body>
+</html>

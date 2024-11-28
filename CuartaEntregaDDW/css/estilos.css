@@ -1,0 +1,70 @@
+#Ejercicio-1{
+    background-color: lightblue;
+    margin: 20PX;
+    padding: 15px;
+}
+
+#Ejercicio-2{
+    background-image:url(../img/imgFondo2.jfif);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#Ejercicio-3{
+    border-style: solid;
+    border-color:red;
+    border-radius: 10px;
+
+}
+
+#Ejercicio-4{
+    padding: 20px;
+    border-style:solid;
+    font-weight: bold;
+    border: 2px;
+}
+
+#Ejercicio-5{
+    background-color: yellow;
+    text-align: center ;
+}
+
+#Ejercicio-6{
+    border-color: purple;
+    border-style: double 2px;
+    background-color: gold;
+}
+
+#Ejercicio-7{
+    background-image: url(../img/imgFondo.jfif) ;
+    background-position:bottom right;
+    background-repeat: no-repeat;
+}
+
+#Ejercicio-8{
+    background-image: url(../img/imgDybala.jfif);
+    background-size: 50%;
+    background-repeat: repeat-y;
+}
+#Ejercicio-9{
+    background-color: steelblue;
+    background-image: url(../img/heavSki.jfif);
+    background-position:top right;
+    background-repeat: no-repeat;
+    
+}
+
+#Boton9{
+    background-color: sienna;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#Ejercicio-10{
+    width: 50%;
+    border: 3px;
+    border-style:dotted ;
+    border-color: darkgreen;
+    padding: 25px;
+
+}

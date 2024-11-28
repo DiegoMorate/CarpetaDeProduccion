@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5 sin utilizar funciones ni metodos DOM</title>
+</head>
+<body>
+    <script>
+        // Generar un número aleatorio entre 0 y 10 (inclusive)
+        var numeroAleatorio = Math.floor(Math.random() * 11);
+
+        // Solicitar al usuario que adivine el número
+        var numeroUsuario = parseInt(prompt("Adivina el número (entre 0 y 10):"));
+
+        // Bucle que continúa hasta que el usuario adivine el número
+        while (numeroUsuario !== numeroAleatorio) {
+            if (numeroUsuario < numeroAleatorio) {
+                numeroUsuario = parseInt(prompt("Tu número es menor que el número a adivinar. Inténtalo de nuevo:"));
+            } else {
+                numeroUsuario = parseInt(prompt("Tu número es mayor que el número a adivinar. Inténtalo de nuevo:"));
+            }
+        }
+
+        // Cuando el usuario adivina el número
+        alert("¡Felicitaciones! Adivinaste el número " + numeroAleatorio);
+    </script>
+</body>
+</html>

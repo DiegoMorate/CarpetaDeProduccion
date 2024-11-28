@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ajSlider Example</title>
+
+    <!-- jQuery Library -->
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+    <!-- ajSlider Plugin -->
+    <script type="text/javascript" src="js/ajSlider.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- script -->
+    <script src="scripts.js"></script>
+
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- Slider container -->
+    <div id="ajSlider">
+      <img src="imgs/nike1.jpg" alt="" width="100%" height="100%">
+      <img src="imgs/nike2.jpg" alt="" width="100%" height="100%">
+      <img src="imgs/nike3.jpg" alt="" width="100%" height="100%">
+      <img src="imgs/nike4.jpg" alt="" width="100%" height="100%">
+      <a class="slider-text">Just do it</a>
+      <a class="slider-text">No pain no gain</a>
+      <a class="slider-text">Have a nike day</a>    
+      <a class="slider-text">Earned not given</a> 
+      <div class="subcontainer">
+        <ul id="ajSliderBullets">
+            <li id="bullet1"></li>
+            <li id="bullet2"></li>
+            <li id="bullet3"></li>
+            <li id="bullet4"></li>
+        </ul>
+      </div>
+    </div> 
+
+    <!-- Inicio jQuery  -->
+    <script>
+        $(document).ready(function() {    
+            $('#ajSlider').ajSlider({
+                interval:5000, // Tiempo entre cada slide
+                slideshow: "enable", // habilitar-deshabilitar
+                bullets: true, //activar los dots
+                activeBullet: "orange", //color dots activos
+                inactiveBullet: "grey", //color dots inactivos
+                textPosition: "30%", //positcion del texto 
+                textSize: "60px" //tamaño
+            });
+        }); 
+        
+    </script>
+</body>
+</html>

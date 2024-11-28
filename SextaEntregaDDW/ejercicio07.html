@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+      .caja-contenedora {
+        display: flex;
+        font-family: "Pacifico", cursive;
+      }
+      .cajas {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+      }
+      p {
+        font-size: 20px;
+        text-align: center;
+      }
+      #caja1 {
+        background-color: rgb(176, 22, 22);
+        color: rgb(9, 9, 104);
+      }
+      #caja2 {
+        background-color: rgb(4, 223, 121);
+        color: rgb(165, 165, 165);
+      }
+      #caja3 {
+        background-color: rgb(239, 136, 0);
+        color: rgb(44, 44, 44);
+      }
+      #caja4 {
+        background-color: rgb(218, 0, 0);
+        color: rgb(253, 255, 134);
+      }
+      #caja5 {
+        background-color: rgb(176, 22, 22);
+        color: rgb(9, 9, 104);
+      }
+      #caja6 {
+        background-color: rgb(1, 17, 197);
+        color: rgb(255, 255, 255);
+      }
+      @media (max-width: 576px) {
+        .caja-contenedora {
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="caja-contenedora">
+      <div class="cajas" id="caja1">
+        <p>Max Verstappen</p>
+      </div>
+      <div class="cajas" id="caja2">
+        <p>Lewis Hamilton</p>
+      </div>
+      <div class="cajas" id="caja3">
+        <p>Daniel Ricciardo</p>
+      </div>
+      <div class="cajas" id="caja4">
+        <p>Charles Leclerc</p>
+      </div>
+      <div class="cajas" id="caja5">
+        <p>Sebastian Vettel</p>
+      </div>
+      <div class="cajas" id="caja6">
+        <p>Franco Colapinto</p>
+      </div>
+    </div>
+  </body>
+</html>

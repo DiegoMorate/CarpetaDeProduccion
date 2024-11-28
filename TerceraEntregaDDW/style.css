@@ -1,0 +1,60 @@
+h1, h2 {
+    color: #2c70ba;  
+    font-family: sans-serif;
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    color: #d5722d;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+header p {
+    color: #eb3323;;
+}
+
+header p span {
+    color: #971d27;
+    justify-content: left;
+    
+    
+}
+
+main section article p {
+    color: #a0cd63;
+}
+
+
+main section article p span, strong {
+    color: #7c9048;
+}
+
+main section article p.Diseño-Web {
+    
+    color: #cf9896;
+}
+
+main section article .Span-Web{
+    color: #893c38;
+}
+
+main section .Cursos-Cortos p {
+    color: #afa2c4;
+}
+
+main section .Cursos-Cortos span{
+    color: #5b4b77;
+}
+
+main section article .Formacion-Profesional {
+    color: #eb4dc7;
+}
+
+main section .Formacion-Profesional span {
+    color: #bc4395
+}

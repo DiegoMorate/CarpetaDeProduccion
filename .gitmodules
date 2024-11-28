@@ -1,0 +1,3 @@
+[submodule "GoatedWeb"]
+	path = GoatedWeb
+	url = https://github.com/CastroLucasL/GoatedWeb.git

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--Css-->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!--Sections para organizar el parallax-->
+    <div class="section-1 p-225" style="background-image: url(imgs/SLT.jpg);">
+      <h1>Bienvenidos</h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+      <a href="#" class="button">Mas información</a>
+    </div>
+
+    <div class="section-2 p-125">
+      <h1>Section Header</h1>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus,
+        excepturi! Doloribus asperiores quae debitis neque aliquam error facere
+        commodi dolor laudantium ipsum molestiae architecto culpa nostrum nihil,
+        facilis fuga expedita.>
+        <a href="#" class="button">Mas información</a>
+      </p>
+    </div>
+    <div class="section-1 p-125" style="background-image: url(imgs/SLT2.jpg);">
+        <h1>Parallax Effect</h1>
+      </div>
+  
+      <div class="section-2 p-125">
+        <h1>Section Header</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus,
+          excepturi! Doloribus asperiores quae debitis neque aliquam error facere
+          commodi dolor laudantium ipsum molestiae architecto culpa nostrum nihil,
+          facilis fuga expedita.>
+          <a href="#" class="button">Mas información</a>
+        </p>
+      </div>
+      <div class="section-1 p-125" style="background-image: url(imgs/SLT3.jpg);">
+        <h1>Parallax Effect</h1>
+      </div>
+  
+      <div class="section-2 p-125">
+        <h1>Section Header</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus,
+          excepturi! Doloribus asperiores quae debitis neque aliquam error facere
+          commodi dolor laudantium ipsum molestiae architecto culpa nostrum nihil,
+          facilis fuga expedita.>
+          <a href="#" class="button">Mas información</a>
+        </p>
+      </div>
+      <!--scripts-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="parallaxie.js"></script>
+
+    <script>
+        $('.section-1').parallaxie({
+            speed: 0.7,
+        });
+    </script>
+  </body>
+</html>

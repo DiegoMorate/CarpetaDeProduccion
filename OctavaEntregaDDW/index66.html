@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function solicitarNombreUsuario() {
+            var nombreUsuario = prompt("Ingrese su nombre:");
+            var apellidoUsuario = prompt("Ingrese su apellido:");
+            mostrarSaludo(nombreUsuario, apellidoUsuario);
+        }
+
+        function mostrarSaludo(nombreUsuario, apellidoUsuario) {
+            alert("¡Hola, " + nombreUsuario + " " + apellidoUsuario + " bienvenido !");
+        }
+
+    </script>
+</head>
+<body>   
+    <button onclick="solicitarNombreUsuario()">Saludar</button>
+    
+</body>
+</html>
